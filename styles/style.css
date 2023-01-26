@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:ital,wght@0,500;1,500&display=swap');
+
+body{
+    background: rgba(255, 144, 14, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* -------------------Header Nav Styles------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-title{
+    padding-left:  228px;
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+    
+
+}
+
+nav ul{
+    display: flex;
+    padding-right:  240px;
+    align-items:center;
+    gap:30px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #424242;
+    text-decoration: none;
+}
+
+/*------------------------------------------------ New Group Style------------------------------------------- */
+.new-group-container{
+    text-align: center;
+    width: 862px;
+    margin: 0 auto;
+}
+.new-group-title{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+}
+
+.new-group-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
+
+.btn-explore{
+    background-color: #FF900E;
+    width: 180px;
+    height: 64px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+}
+
+/*------------------------------------------------ Banner Image------------------------------------------- */
+.banner-section{
+    margin: 0 auto;
+    width:1440px;
+    height: 700px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  
+}
