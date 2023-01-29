@@ -50,9 +50,13 @@ nav ul li a {
 
 /*------------------------------------------------ New Group Style------------------------------------------- */
 .new-group-container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     text-align: center;
-    width: 862px;
-    margin: 0 auto;
+    /* width: 862px;
+    margin: 0 auto; */
 }
 .new-group-title{
     font-weight: 700;
@@ -68,25 +72,32 @@ nav ul li a {
 
 .btn-explore{
     background-color: #FF900E;
-    width: 180px;
-    height: 64px;
+    /* width: 180px;
+    height: 64px; */
     color: #FFFFFF;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
     border: none;
     border-radius: 5px;
+    padding:20px 24px;  
+    margin-top: 32px;
 }
 
 /*------------------------------------------------ Banner Image Styles------------------------------------------- */
 .banner-section{
-    margin: 0 auto;
-    width:1440px;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* width:1440px; */
     height: 700px;
     padding-top: 50px;
     padding-bottom: 45px;
   
 }
+
+
 
 /*------------------------------------------------ Quick List Styles------------------------------------------- */
 
@@ -116,7 +127,7 @@ nav ul li a {
 .quick-list-text-section{
     padding-left: 60px;
     width: 537px;
-    height: 304px;
+    /* height: 304px; */
 }
 
 .quick-list-title{
@@ -147,7 +158,8 @@ nav ul li a {
     margin-top: 24px;
 }
 
-.quick-list-text-section .btn-explore{
+.quick-list-text-section 
+{
     margin-top: 32px;
 }
 
@@ -228,15 +240,17 @@ nav ul li a {
 
 /*------------------------------------- Some Facts Section Styles--------------------------------------- */
 .someFacts-container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-items: center; */
     
 
 }
 
 .some-facts-title-section{
-   
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     margin-left: -850px;
 }
 
@@ -265,6 +279,12 @@ nav ul li a {
     border-radius: 5px;
     text-align: center;
     padding: 40px 52px 65px ;
+}
+
+.achv-box-1:hover, .achv-box-2:hover, .achv-box-3:hover, .achv-box-4:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 
 .acheivement-number{
@@ -306,17 +326,141 @@ nav ul li a {
 /* ========================================Footer Section Style=========================================== */
 
 footer{
-    margin: 0 auto;
+    margin: 0 auto; 
+    /* display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center; */
     background: #FFF4E7;
     border-radius: 8px;
-    width: 1440px;
+    /* width: 1440px; */
     text-align: center;
     padding: 30px;
 
 }
+
   .footer-p{
     font-weight: 400;
     font-size: 20px;
     color: #424242;
     
   }
+
+
+/* ----------------------------------------Media Query Styles----------------------------------------- */
+  /* Mobile Devices */
+@media only screen and (max-width:688px) {
+    header{
+        width:100%;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-title{
+        padding-left:20px;
+    }
+    .new-group-title{
+        font-size: 54px;
+    }
+    .banner-section{
+        margin-bottom:150px;
+        padding: ;
+       
+        height: 0px;
+    }
+    .banner-section img{
+        width: 100%;
+    }
+    .quick-list-container{
+        flex-direction: column-reverse; 
+    }
+    .quick-list-img-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+        /* margin-top: 132px; */
+    }
+    .quick-list-text-section {
+        padding-left: 0px;
+        width: 100%;
+        
+    }
+
+    .quick-list-title{
+        padding-top:0;
+        margin-top: 110px;
+    }
+    .btn-explore{
+        margin-top: 0;
+    }
+
+    .feature-container {
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .feature-title {
+        font-size: 40px;
+        padding-left: 21px;    }
+    
+    .feature-container p {
+    
+        width: 60%;
+    }
+    .feature-img-section img{
+        width: 76%;
+    }
+    .btn-tenyears {
+        
+        padding: 15px 16px;
+        position: relative;
+        top: -39px;
+        left: 15px; 
+    }
+
+    .some-facts-title-section {
+        margin-left: 0px; 
+    }
+    .feature-title {
+        padding-left: 0px;
+    }
+    .someFacts-p {
+        
+        margin-left: 40px;
+        width: 284px;
+    } 
+
+    .someFacts-acheivement-container{
+        flex-direction: column;
+        gap: 45px;
+        margin-top: 36px;
+    }
+
+    .achv-box-1, .achv-box-2, .achv-box-3, .achv-box-4 {
+        
+        margin: 20px;
+    }
+
+    .sponsored-container {
+        
+        margin-top: 105px;
+      
+    }
+    .sponsors-logo{
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    .sponsors-logo img{
+        width:70%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+
+}
